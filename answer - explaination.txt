@@ -1,1 +1,21 @@
+Explanation of the Code
+Data Preprocessing:
+
+Handled missing values by filling with column means.
+Transformed Date of Joining into a Tenure feature and removed the original date column.
+Encoded categorical features (Gender, Company Type, WFH Setup Available) using LabelEncoder.
+Model Training:
+
+Used RandomForestRegressor to model the data.
+Split the training data into train and validation sets for internal evaluation.
+Evaluation Metric:
+
+The R2 Score was calculated on the validation data.
+Scaled the R2 Score using the provided formula: score = 100 * r2_score.
+Prediction and Submission:
+
+Made predictions on the test set.
+Created a CSV file with Employee ID and predicted Burn Rate.
+
+Notes: 
 In the question they have given train dataset and test dataset which is the Xtrain value and Xtest values. In this i firstly treated all null values, then did encoding using label encoding and started the training and testing. After that as per the question i applied the r2 formula and displayed the answers. then i exported the information in csv file and uploaded. 
